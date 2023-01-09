@@ -7,8 +7,8 @@ public class P0145_Binary_Tree_Postorder_Traversal {
     // Definition for a binary tree node.
     public class TreeNode {
         int val;
-        P0144_Binary_Tree_Preorder_Traversal.TreeNode left;
-        P0144_Binary_Tree_Preorder_Traversal.TreeNode right;
+        TreeNode left;
+        TreeNode right;
 
         TreeNode() {
         }
