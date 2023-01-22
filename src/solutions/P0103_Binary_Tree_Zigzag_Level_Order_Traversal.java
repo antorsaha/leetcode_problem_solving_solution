@@ -2,20 +2,18 @@ package solutions;
 
 import utrils.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
-public class P0102_Binary_Tree_Level_Order_Traversal {
+public class P0103_Binary_Tree_Zigzag_Level_Order_Traversal {
     class Solution {
-        public List<List<Integer>> levelOrder(TreeNode root) {
+        public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
             if (root == null)
                 return new ArrayList<>();
 
             List<List<Integer>> result = new ArrayList<>();
             Queue<TreeNode> q = new LinkedList<>();
             q.offer(root);
+            int level = 0;
 
             while (!q.isEmpty()) {
                 int n = q.size();
@@ -32,7 +30,10 @@ public class P0102_Binary_Tree_Level_Order_Traversal {
                             q.offer(curr.right);
                     }
                 }
+                if (level % 2 == 1)
+                    Collections.reverse(list);
                 result.add(list);
+                level++;
             }
             return result;
         }
