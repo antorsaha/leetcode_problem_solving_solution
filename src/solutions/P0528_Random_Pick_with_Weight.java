@@ -3,7 +3,7 @@ package solutions;
 public class P0528_Random_Pick_with_Weight {
     class Solution {
 
-        private int[] idx;
+        private final int[] idx;
 
         public Solution(int[] w) {
             for (int i = 1; i < w.length; i++)
