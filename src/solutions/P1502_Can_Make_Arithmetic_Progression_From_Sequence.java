@@ -16,4 +16,7 @@ public class P1502_Can_Make_Arithmetic_Progression_From_Sequence {
             return true;
         }
     }
+
+    //Have to review this solution
+    // https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/3602439/python-java-c-simple-solution-sorting-without-sorting/
 }
