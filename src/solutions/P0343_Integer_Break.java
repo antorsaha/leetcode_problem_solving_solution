@@ -1,6 +1,6 @@
 package solutions;
 
-public class P343_Integer_Break {
+public class P0343_Integer_Break {
     class Solution {
         public int integerBreak(int n) {
             if (n <= 1) {
